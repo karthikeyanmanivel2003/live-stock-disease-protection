@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C5F1F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #B3A4F7;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.forgot-password {
+    color: #8E8AF0;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8E8AF0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    background-color: #746EE6;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-link {
+    color: #8E8AF0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>WELCOME BACK</h2>
+        <form action="#">
+            <div class="input-container">
+                <input type="text" placeholder="Enter user name" required>
+            </div>
+            <div class="input-container password-container">
+                <input type="password" id="password" placeholder="Enter password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    
+                </span>
+            </div>
+            <a href="" class="forgot-password">Forgot password?</a>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p>Don't have an account? just <a href="register.html" class="signup-link">Sign up</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
